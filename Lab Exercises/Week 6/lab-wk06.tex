@@ -1,0 +1,39 @@
+%  Emacs    : -*- latex -*-
+%  File     : lab-wk06.tex
+%  RCS      : $Id: lab-wk06.tex,v 1.5 2014-08-19 08:31:12 schachte Exp $
+%  Author   : Matthew De Bono
+%  Origin   : Fri Aug 21 21:00:00 2015
+
+\documentclass[a4paper]{article}
+\usepackage{alltt}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{fullpage}
+
+\input{../subjdefs}
+
+\usepackage{hevea}      % for converting document to HTML
+
+\begin{document}
+\LABHEADER{6}{Writing Mutable Classes}
+%
+This exercise continues your work from last week.
+
+\subsection*{Workshop Exercises}
+These are just for practice, and will not be assessed.
+\begin{enumerate}
+\item Revise your \texttt{Character} class from last lab by adding or modifying and methods so that the class is now mutable.
+\end{enumerate}
+
+\subsection*{Homework}
+These will also not be assessed.
+\begin{enumerate}[resume]
+\item Revise your \texttt{Movie} class from last week to use your new mutable \texttt{Character} class. Minimally adapt your testing code from last
+  week to test your new \texttt{Movie} class.
+
+\item Compare the difficulty of avoiding \emph{privacy leaks} when
+  using immutable classes for all instance variables with the
+  difficulty when some instance variables hold mutable objects.
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,54 @@
+%  Emacs    : -*- latex -*-
+%  File     : lab-wk04.tex
+%  RCS      : $Id: lab-wk04.tex,v 1.7 2014-08-19 08:31:12 schachte Exp $
+%  Author   : Matthew De Bono
+%  Origin   : Mon Aug  17 18:54:03 2015
+
+\documentclass[a4paper]{article}
+\usepackage{color}
+\usepackage{alltt}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{fullpage}
+
+\input{../subjdefs}
+
+\usepackage{hevea}      % for converting document to HTML
+
+\begin{document}
+\LABHEADER{4}{Writing Class Methods}
+%
+\subsection*{Workshop Exercises}
+These are just for practice, and will not be assessed.
+\begin{enumerate}
+\item Write a class method called \verb|printMovies| that prints a list of your top 5 personal favourite movies. The output of this method should be in a numbered list, as follows:\\
+\verb|1. The Avengers|\\
+\verb|2. Iron Man|\\
+\verb|3. |...
+\label{Q1}
+
+\item \textit{Overload} your \verb|printMovies| method to accept two arguments - an integer and a \verb|String|, which represent the rank and title of someone's favourite movie. Your method should then print the movie, with its rank, as above. For example, \verb|printMovies(3, "Guardians of the Galaxy")| should output\\
+ \verb|3. Guardians of the Galaxy|.
+
+Revise your solution to Exercise \ref{Q1} to use your method for this exercise to print out your 5 favourites. 
+\end{enumerate}
+
+\subsection*{Homework}
+These will also not be assessed.
+\begin{enumerate}[resume]
+
+\item Write a class method called \verb|isAFavourite| which accepts a single \verb|String| argument, and returns \verb|true| if the argument is one of the movies contained in your list of favourites, and false otherwise.
+
+\textbf{Hint:} Store your list as a single \verb|String|
+
+\textbf{Hint:} The \verb|String| method \verb|contains(arg)| returns \verb|true| if the argument is contained in the string. For example, \verb|"hello".contains("hell")| will return \verb|true|.
+  
+\item \textbf{Challenge:} \textit{Overload} your \verb|printMovies| method again to accept a single \verb|String| argument, where the string is a list of movies separated by commas. Your method should then print each movie on a separate line, numbered by the order you print it. \\
+For example, \verb|printMovies("The Avengers, Iron Man, Thor")| should output\\
+\verb|1. The Avengers|\\
+\verb|2. Iron Man|\\
+\verb|3. Thor|
+
+Again revise your solution to Exercise \ref{Q1} to use this new method to print out your 5 favourites.
+\end{enumerate}
+\end{document}

@@ -1,0 +1,44 @@
+%  Emacs    : -*- latex -*-
+%  File     : lab-wk05.tex
+%  RCS      : $Id: lab-wk05.tex,v 1.14 2014-08-19 08:31:12 schachte Exp $
+%  Author   : Matthew De Bono
+%  Origin   : Fri Aug 21 21:00:00 2015
+
+\documentclass[a4paper]{article}
+\usepackage{color}
+\usepackage{alltt}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{fullpage}
+
+\input{../subjdefs}
+
+\newcommand{\THISLAB}{lab5}
+\newcommand{\SUBMITFILES}{CheckerChecker.java}
+\newcommand{\DUE}{\LABCDUE}
+
+\usepackage{hevea}      % for converting document to HTML
+
+\begin{document}
+\LABHEADER{5}{Writing Immutable Classes}
+This week we will continue our development by writing immutable classes that make use of the methods we defined in lab 4. Immutable classes are designed to remain unchanged after they are created, and are useful when considering privacy, and privacy leaks.
+
+\subsection*{Workshop Exercises}
+These are just for practice, and will not be assessed.
+\begin{enumerate}
+\item Write an immutable \texttt{Movie} class to represent a theatrical movie. The class should have instance variables for the title, rank, and run time (in minutes). Give it the appropriate methods and constructors, but be sure to make the class immutable.  \label{movie}
+
+\item Add a \texttt{toString} method to the \texttt{Movie} class. The \texttt{toString} method should print the movie's rank and title in the same format as last lab.
+
+\item Add an \texttt{equals} method to the \texttt{Movie} class. The \texttt{equals} method should return \verb|true| if the both movie's title, rank and run time are equal, and \verb|false| otherwise.
+\end{enumerate}
+
+\subsection*{Homework}
+These will also not be assessed.
+\begin{enumerate}[resume]
+\item Write an immutable \texttt{Character} class to represent the characters in a movie. The class should have instance variables for the character's name, the name of the actor who played them, a rating, and the name of the movie the character appears in. Give it the appropriate methods and constructors, but be sure to make the class immutable.
+
+Revise your solution to Exercise \ref{movie} to include an instance variable of type \texttt{Character} for the main character of the movie. 
+\label{appointment}
+\end{enumerate}
+\end{document}
